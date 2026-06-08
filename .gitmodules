@@ -7,3 +7,27 @@
 [submodule "officals/kernelwiki/KernelWiki"]
 	path = officals/kernelwiki/KernelWiki
 	url = https://github.com/mit-han-lab/KernelWiki.git
+[submodule "officals/hpc_mlsys/ncu-report-skill"]
+	path = officals/hpc_mlsys/ncu-report-skill
+	url = https://github.com/mit-han-lab/ncu-report-skill.git
+[submodule "officals/hpc_mlsys/nvidia-skills"]
+	path = officals/hpc_mlsys/nvidia-skills
+	url = https://github.com/NVIDIA/skills.git
+[submodule "officals/hpc_mlsys/flagos-skills"]
+	path = officals/hpc_mlsys/flagos-skills
+	url = https://github.com/flagos-ai/skills.git
+[submodule "officals/hpc_mlsys/ai-research-skills"]
+	path = officals/hpc_mlsys/ai-research-skills
+	url = https://github.com/Orchestra-Research/AI-research-SKILLs.git
+[submodule "officals/hpc_mlsys/nemo-evaluator"]
+	path = officals/hpc_mlsys/nemo-evaluator
+	url = https://github.com/NVIDIA-NeMo/Evaluator.git
+[submodule "officals/scientific/scientific-agent-skills"]
+	path = officals/scientific/scientific-agent-skills
+	url = https://github.com/K-Dense-AI/scientific-agent-skills.git
+[submodule "officals/scientific/huggingface-skills"]
+	path = officals/scientific/huggingface-skills
+	url = https://github.com/huggingface/skills.git
+[submodule "officals/skill_discovery/skills-vote"]
+	path = officals/skill_discovery/skills-vote
+	url = https://github.com/MemTensor/skills-vote.git

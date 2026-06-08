@@ -32,6 +32,9 @@ Upstream and official-reference repositories are linked as Git submodules under 
 | vLLM-Ascend `.agents/skills` | 2 | [officals/vllm-ascend/](officals/vllm-ascend/) |
 | vLLM Skills plugin | 6 | [officals/vllm-skills/](officals/vllm-skills/) |
 | KernelWiki | 1 wiki/skill project | [officals/kernelwiki/KernelWiki/](officals/kernelwiki/KernelWiki/) |
+| HPC / MLSys skill references | 5 repositories | [officals/hpc_mlsys/](officals/hpc_mlsys/) |
+| Scientific / HF skill references | 2 repositories | [officals/scientific/](officals/scientific/) |
+| Skill discovery reference | 1 repository | [officals/skill_discovery/](officals/skill_discovery/) |
 
 ## External Skill Reference
 
