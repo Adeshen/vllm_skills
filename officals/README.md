@@ -36,9 +36,9 @@ This directory keeps upstream repositories as Git submodules, not vendored copie
 
 - These submodules are upstream operational/reference sources.
 - They should not overwrite local wiki-maintenance skills under [../our-wiki-skill/](../our-wiki-skill/).
-- Generic vLLM deploy/benchmark skills do not prove vLLM-Ascend behavior by themselves.
-- KernelWiki is a wiki-construction and GPU-kernel knowledge-base reference; it is not vLLM-Ascend bug evidence by itself.
-- A skill route becomes bug-wiki evidence only after local Ascend commands, logs, metrics, and environment details are captured.
+- Generic vLLM deploy/benchmark skills do not prove backend-specific behavior by themselves.
+- KernelWiki is a wiki-construction and GPU-kernel knowledge-base reference; it is not vLLM or vLLM-Ascend bug evidence by itself.
+- A skill route becomes bug-wiki evidence only after local backend-specific commands, logs, metrics, and environment details are captured.
 - New local model paths should use `/mnt/data2/model_weights`.
 
 ## Validation Notes
