@@ -8,7 +8,11 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-SKILL_ROOTS = [ROOT / "our-wiki-skill", ROOT / "our-operator-skills"]
+SKILL_ROOTS = [
+    ROOT / "our-wiki-skill",
+    ROOT / "our-operator-skills",
+    ROOT / "our-research-skills",
+]
 
 
 def frontmatter(text: str) -> dict[str, str]:

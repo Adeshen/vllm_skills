@@ -6,6 +6,7 @@ This repository collects Codex skills and upstream references for vLLM knowledge
 | --- | --- |
 | [vllm-feature-wiki](our-wiki-skill/vllm-feature-wiki/SKILL.md) | Maintain vLLM engine feature wikis as state-machine documentation. |
 | [vllm-bug-wiki](our-wiki-skill/vllm-bug-wiki/SKILL.md) | Maintain evidence-driven bug wikis as issue-to-fix capsules. |
+| [paper-skill](our-research-skills/paper-skill/SKILL.md) | Search, triage, and synthesize related papers from seed literature. |
 
 ## Scope
 
@@ -22,6 +23,14 @@ Our documentation-maintenance skills are grouped under [our-wiki-skill/](our-wik
 | --- | --- |
 | [vllm-feature-wiki](our-wiki-skill/vllm-feature-wiki/SKILL.md) | vLLM feature-state wiki construction, theory pages, feature-to-bug maps, and feature-wiki validation. |
 | [vllm-bug-wiki](our-wiki-skill/vllm-bug-wiki/SKILL.md) | Evidence capsule construction for vLLM/vLLM-Ascend bug wikis, workload patterns, release/fuzzer/CI summaries, and bug-wiki validation. |
+
+## Our Research Skills
+
+Research-support skills are grouped under [our-research-skills/](our-research-skills/):
+
+| Skill | Scope |
+| --- | --- |
+| [paper-skill](our-research-skills/paper-skill/SKILL.md) | Related-paper search, seed-paper expansion, literature clustering, and local wiki/action mapping for vLLM, LLM serving, fuzzing, incidents, CI/security, and MLSys topics. |
 
 ## Official And Upstream Skills
 

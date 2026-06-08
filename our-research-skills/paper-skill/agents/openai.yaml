@@ -1,0 +1,4 @@
+interface:
+  display_name: "Paper Skill"
+  short_description: "Search and synthesize related papers."
+  default_prompt: "Use $paper-skill to expand this seed paper list into a related-paper map with clusters, citations, local wiki connections, and next search actions."

@@ -44,6 +44,12 @@ SOURCES: tuple[SourceSpec, ...] = (
         "Local vLLM/vLLM-Ascend operation and reproduction skills.",
     ),
     SourceSpec(
+        "local-research",
+        ".",
+        ("our-research-skills/*/SKILL.md",),
+        "Local literature search and research synthesis skills.",
+    ),
+    SourceSpec(
         "vllm-ascend",
         "officals/vllm-ascend",
         (".agents/skills/*/SKILL.md",),
