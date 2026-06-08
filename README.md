@@ -34,16 +34,16 @@ Research-support skills are grouped under [our-research-skills/](our-research-sk
 
 ## Official And Upstream Skills
 
-Upstream and official-reference repositories are linked as Git submodules under [officals/](officals/):
+Upstream and official-reference repositories are linked as Git submodules under [officials/](officials/):
 
 | Source | Count | Submodule path |
 | --- | ---: | --- |
-| vLLM-Ascend `.agents/skills` | 2 | [officals/vllm-ascend/](officals/vllm-ascend/) |
-| vLLM Skills plugin | 6 | [officals/vllm-skills/](officals/vllm-skills/) |
-| KernelWiki | 1 wiki/skill project | [officals/kernelwiki/KernelWiki/](officals/kernelwiki/KernelWiki/) |
-| HPC / MLSys skill references | 5 repositories | [officals/hpc_mlsys/](officals/hpc_mlsys/) |
-| Scientific / HF skill references | 2 repositories | [officals/scientific/](officals/scientific/) |
-| Skill discovery reference | 1 repository | [officals/skill_discovery/](officals/skill_discovery/) |
+| vLLM-Ascend `.agents/skills` | 2 | [officials/vllm-ascend/](officials/vllm-ascend/) |
+| vLLM Skills plugin | 6 | [officials/vllm-skills/](officials/vllm-skills/) |
+| KernelWiki | 1 wiki/skill project | [officials/kernelwiki/KernelWiki/](officials/kernelwiki/KernelWiki/) |
+| HPC / MLSys skill references | 5 repositories | [officials/hpc_mlsys/](officials/hpc_mlsys/) |
+| Scientific / HF skill references | 2 repositories | [officials/scientific/](officials/scientific/) |
+| Skill discovery reference | 1 repository | [officials/skill_discovery/](officials/skill_discovery/) |
 
 ## External Skill Reference
 
@@ -60,7 +60,7 @@ Those skills help plan deployment and benchmark verification. They are not backe
 
 The local wiki skills also reference [KernelWiki](https://github.com/mit-han-lab/KernelWiki) as a knowledge-base construction model for source layering, schema discipline, provenance, query pages, and validation. KernelWiki is not used as factual evidence for vLLM or vLLM-Ascend bugs unless a specific local page explicitly says so.
 
-Note: the KernelWiki snapshot under [officals/kernelwiki/KernelWiki/](officals/kernelwiki/KernelWiki/) is kept verbatim at the requested commit. Its upstream `SKILL.md` has a frontmatter field that is outside the current local validator schema.
+Note: the KernelWiki snapshot under [officials/kernelwiki/KernelWiki/](officials/kernelwiki/KernelWiki/) is kept verbatim at the requested commit. Its upstream `SKILL.md` has a frontmatter field that is outside the current local validator schema.
 
 ## Normalized Skill Install
 

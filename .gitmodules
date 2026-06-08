@@ -1,33 +1,33 @@
-[submodule "officals/vllm-ascend"]
-	path = officals/vllm-ascend
+[submodule "officials/vllm-ascend"]
+	path = officials/vllm-ascend
 	url = https://github.com/vllm-project/vllm-ascend.git
-[submodule "officals/vllm-skills"]
-	path = officals/vllm-skills
+[submodule "officials/vllm-skills"]
+	path = officials/vllm-skills
 	url = https://github.com/vllm-project/vllm-skills.git
-[submodule "officals/kernelwiki/KernelWiki"]
-	path = officals/kernelwiki/KernelWiki
+[submodule "officials/kernelwiki/KernelWiki"]
+	path = officials/kernelwiki/KernelWiki
 	url = https://github.com/mit-han-lab/KernelWiki.git
-[submodule "officals/hpc_mlsys/ncu-report-skill"]
-	path = officals/hpc_mlsys/ncu-report-skill
+[submodule "officials/hpc_mlsys/ncu-report-skill"]
+	path = officials/hpc_mlsys/ncu-report-skill
 	url = https://github.com/mit-han-lab/ncu-report-skill.git
-[submodule "officals/hpc_mlsys/nvidia-skills"]
-	path = officals/hpc_mlsys/nvidia-skills
+[submodule "officials/hpc_mlsys/nvidia-skills"]
+	path = officials/hpc_mlsys/nvidia-skills
 	url = https://github.com/NVIDIA/skills.git
-[submodule "officals/hpc_mlsys/flagos-skills"]
-	path = officals/hpc_mlsys/flagos-skills
+[submodule "officials/hpc_mlsys/flagos-skills"]
+	path = officials/hpc_mlsys/flagos-skills
 	url = https://github.com/flagos-ai/skills.git
-[submodule "officals/hpc_mlsys/ai-research-skills"]
-	path = officals/hpc_mlsys/ai-research-skills
+[submodule "officials/hpc_mlsys/ai-research-skills"]
+	path = officials/hpc_mlsys/ai-research-skills
 	url = https://github.com/Orchestra-Research/AI-research-SKILLs.git
-[submodule "officals/hpc_mlsys/nemo-evaluator"]
-	path = officals/hpc_mlsys/nemo-evaluator
+[submodule "officials/hpc_mlsys/nemo-evaluator"]
+	path = officials/hpc_mlsys/nemo-evaluator
 	url = https://github.com/NVIDIA-NeMo/Evaluator.git
-[submodule "officals/scientific/scientific-agent-skills"]
-	path = officals/scientific/scientific-agent-skills
+[submodule "officials/scientific/scientific-agent-skills"]
+	path = officials/scientific/scientific-agent-skills
 	url = https://github.com/K-Dense-AI/scientific-agent-skills.git
-[submodule "officals/scientific/huggingface-skills"]
-	path = officals/scientific/huggingface-skills
+[submodule "officials/scientific/huggingface-skills"]
+	path = officials/scientific/huggingface-skills
 	url = https://github.com/huggingface/skills.git
-[submodule "officals/skill_discovery/skills-vote"]
-	path = officals/skill_discovery/skills-vote
+[submodule "officials/skill_discovery/skills-vote"]
+	path = officials/skill_discovery/skills-vote
 	url = https://github.com/MemTensor/skills-vote.git

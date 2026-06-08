@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Install or index skill folders from local and submodule repositories.
 
-The upstream repositories in officals/ do not share one skill-folder layout.
+The upstream repositories in officials/ do not share one skill-folder layout.
 This script discovers SKILL.md files from known roots and creates a normalized
 installation directory made of symlinks or copies.
 """
@@ -51,55 +51,55 @@ SOURCES: tuple[SourceSpec, ...] = (
     ),
     SourceSpec(
         "vllm-ascend",
-        "officals/vllm-ascend",
+        "officials/vllm-ascend",
         (".agents/skills/*/SKILL.md",),
         "Official vLLM-Ascend agent skills.",
     ),
     SourceSpec(
         "vllm-skills",
-        "officals/vllm-skills",
+        "officials/vllm-skills",
         ("plugins/vllm-skills/skills/*/SKILL.md",),
         "Official vLLM skill plugin repository.",
     ),
     SourceSpec(
         "kernelwiki",
-        "officals/kernelwiki/KernelWiki",
+        "officials/kernelwiki/KernelWiki",
         ("SKILL.md",),
         "KernelWiki reference skill.",
     ),
     SourceSpec(
         "hpc-ncu",
-        "officals/hpc_mlsys/ncu-report-skill",
+        "officials/hpc_mlsys/ncu-report-skill",
         ("SKILL.md",),
         "Nsight Compute report and kernel profiling skill.",
     ),
     SourceSpec(
         "hpc-nvidia",
-        "officals/hpc_mlsys/nvidia-skills",
+        "officials/hpc_mlsys/nvidia-skills",
         ("skills/*/SKILL.md", "plugins/nvidia-skills/skills/*/SKILL.md"),
         "NVIDIA HPC, CUDA-X, Dynamo, NeMo, and platform skill catalog.",
     ),
     SourceSpec(
         "hpc-flagos",
-        "officals/hpc_mlsys/flagos-skills",
+        "officials/hpc_mlsys/flagos-skills",
         ("skills/*/SKILL.md",),
         "FlagOS heterogeneous AI stack skills.",
     ),
     SourceSpec(
         "hpc-ai-research",
-        "officals/hpc_mlsys/ai-research-skills",
+        "officials/hpc_mlsys/ai-research-skills",
         ("**/SKILL.md",),
         "MLSys and AI research skills, including inference serving.",
     ),
     SourceSpec(
         "scientific",
-        "officals/scientific/scientific-agent-skills",
+        "officials/scientific/scientific-agent-skills",
         ("skills/*/SKILL.md",),
         "Scientific computing skill catalog.",
     ),
     SourceSpec(
         "huggingface",
-        "officals/scientific/huggingface-skills",
+        "officials/scientific/huggingface-skills",
         ("skills/*/SKILL.md", "hf-mcp/skills/*/SKILL.md"),
         "Hugging Face ecosystem skill catalog.",
     ),
