@@ -1,0 +1,4 @@
+interface:
+  display_name: "Collect vLLM Ascend Traces"
+  short_description: "Collect Jaeger traces for vLLM Ascend on npu4."
+  default_prompt: "Use $collect-vllm-ascend-traces to start the local Jaeger stack, verify tunnels, and confirm traces from a vLLM Ascend service on npu4."

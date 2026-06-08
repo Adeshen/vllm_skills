@@ -1,0 +1,4 @@
+interface:
+  display_name: "Reproduce vLLM Ascend Issue"
+  short_description: "Read and reproduce vllm-ascend GitHub issues."
+  default_prompt: "Use $reproduce-vllm-ascend-issue to fetch a vllm-ascend GitHub issue, reproduce it on npu4, and write a local report."

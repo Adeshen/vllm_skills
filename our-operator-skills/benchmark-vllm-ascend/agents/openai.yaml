@@ -1,0 +1,4 @@
+interface:
+  display_name: "Benchmark vLLM Ascend"
+  short_description: "Run vLLM Ascend pressure tests and KV recording."
+  default_prompt: "Use $benchmark-vllm-ascend to sync benchmark scripts to npu4, run a pressure test, and summarize the artifacts."

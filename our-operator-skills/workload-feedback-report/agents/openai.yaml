@@ -1,0 +1,4 @@
+interface:
+  display_name: "Workload Feedback Report"
+  short_description: "Synthesize runs and issue reports into a workload-family paper report."
+  default_prompt: "Use $workload-feedback-report to read the provided report input bundle, compare workload families across structured run summaries and normalized reports, and write a paper-facing feedback report with next generator actions."

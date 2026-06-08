@@ -1,0 +1,4 @@
+interface:
+  display_name: "Record vLLM Ascend Report"
+  short_description: "Normalize vLLM Ascend notes into structured reports."
+  default_prompt: "Use $record-vllm-ascend-report to turn this vLLM Ascend run into a normalized Markdown report under discussion_reports/bug."

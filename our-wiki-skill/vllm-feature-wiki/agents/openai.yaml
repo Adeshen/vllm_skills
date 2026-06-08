@@ -1,0 +1,4 @@
+interface:
+  display_name: "vLLM Feature Wiki"
+  short_description: "Build and maintain vLLM feature-state wikis"
+  default_prompt: "Use $vllm-feature-wiki to expand the vLLM-Ascend feature wiki with evidence-driven state-machine explanations."

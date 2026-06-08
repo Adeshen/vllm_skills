@@ -1,0 +1,4 @@
+interface:
+  display_name: "vLLM Bug Wiki"
+  short_description: "Build evidence-driven vLLM-Ascend bug capsules"
+  default_prompt: "Use $vllm-bug-wiki to create or update vLLM-Ascend bug capsules from local evidence."

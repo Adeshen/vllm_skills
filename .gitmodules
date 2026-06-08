@@ -1,0 +1,9 @@
+[submodule "officals/vllm-ascend"]
+	path = officals/vllm-ascend
+	url = https://github.com/vllm-project/vllm-ascend.git
+[submodule "officals/vllm-skills"]
+	path = officals/vllm-skills
+	url = https://github.com/vllm-project/vllm-skills.git
+[submodule "officals/kernelwiki/KernelWiki"]
+	path = officals/kernelwiki/KernelWiki
+	url = https://github.com/mit-han-lab/KernelWiki.git

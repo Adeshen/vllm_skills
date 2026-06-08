@@ -1,0 +1,59 @@
+{
+  "report_id": "wf-20260428-r1",
+  "paper_theme": "workload generation strategy guided by quantitative anomaly feedback",
+  "scope_comment": "Focus on workload-family synthesis for the current paper draft. PD and Mooncake cases remain supporting evidence only.",
+  "families": [
+    {
+      "id": "boundary_prefix",
+      "title": "Boundary Prefix",
+      "goal": "Detect prefix-cache anomalies at exact 1024*n token boundaries.",
+      "primary_axes": ["input_tokens", "prefix_cache_hit_efficiency"],
+      "issue_tags": ["7965"]
+    },
+    {
+      "id": "reuse_depth_sweep",
+      "title": "Reuse Depth Sweep",
+      "goal": "Characterize how reusable shared-prefix depth changes cache effectiveness and latency.",
+      "primary_axes": ["lcp_depth", "concurrency", "prefix_cache_hit_efficiency"],
+      "issue_tags": ["7706"]
+    }
+  ],
+  "runs": [
+    {
+      "id": "run-7965-summary",
+      "family_id": "boundary_prefix",
+      "summary_json": "vllm_experiment_recorder/outputs/example-7965/summary.json",
+      "summary_md": "vllm_experiment_recorder/outputs/example-7965/summary.md",
+      "notes": "Exact 1024, 1025, 2048, 2049, 4096, 4097 boundary checks."
+    },
+    {
+      "id": "run-7706-summary",
+      "family_id": "reuse_depth_sweep",
+      "summary_json": "vllm_experiment_recorder/outputs/example-7706/summary.json",
+      "summary_md": "vllm_experiment_recorder/outputs/example-7706/summary.md",
+      "notes": "Controlled LCP sweep across sub-1024 to 4096+ bands."
+    }
+  ],
+  "reports": [
+    {
+      "id": "issue-7965-report",
+      "family_id": "boundary_prefix",
+      "path": "discussion_reports/bug/issue_7965_prefix-cache-1024-boundary-hit-rate.md",
+      "status": "strictly reproduced"
+    },
+    {
+      "id": "issue-7706-report",
+      "family_id": "reuse_depth_sweep",
+      "path": "discussion_reports/bug/issue_7706_prefix-cache-multi-concurrency-perf.md",
+      "status": "approximately reproduced"
+    }
+  ],
+  "notes": [],
+  "baselines": [
+    {
+      "id": "baseline-local",
+      "version": "local-current",
+      "summary_json": "vllm_experiment_recorder/outputs/example-baseline/summary.json"
+    }
+  ]
+}

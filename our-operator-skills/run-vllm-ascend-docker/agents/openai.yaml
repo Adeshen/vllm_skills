@@ -1,0 +1,4 @@
+interface:
+  display_name: "Run vLLM Ascend Docker"
+  short_description: "Run and troubleshoot vLLM Ascend Docker on npu4."
+  default_prompt: "Use $run-vllm-ascend-docker to inspect or launch a vLLM Ascend Docker service on npu4 for a specific model."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "vLLM Ascend Incident Triage"
+  short_description: "Preserve incident context, save trigger requests, replay, and route to specialist workflows."
+  default_prompt: "Use $vllm-ascend-incident-triage to preserve the current vLLM Ascend incident scene on npu4, save the trigger request, replay it on a clean target, and route the case to the right specialist workflow."
