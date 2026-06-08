@@ -4,6 +4,8 @@ This file connects the local bug-wiki skill to the official `vllm-project/vllm-s
 
 Source: https://github.com/vllm-project/vllm-skills
 
+For broader upstream routes including NCU, NVIDIA, FlagOS, AI Research, and evaluation skills, also read `../shared/upstream-routes.md` from the `our-wiki-skill/` directory.
+
 ## Available Official Skill Routes
 
 | Official skill | Bug-wiki use |

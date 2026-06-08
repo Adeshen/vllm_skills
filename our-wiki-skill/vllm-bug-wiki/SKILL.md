@@ -23,6 +23,13 @@ Borrow two useful patterns:
 
 Do not treat KernelWiki or vLLM Skills as factual evidence for vLLM-Ascend bugs. They are style references only.
 
+## Golden Rules
+
+- **Issue-to-fix chain or unknown.** Do not write a confident capsule unless issue, symptom, workload, affected context, fix, reproduction status, and fuzzer discoverability are tied to evidence or marked `unknown`.
+- **Plan upstream, prove locally.** Read [../shared/upstream-routes.md](../shared/upstream-routes.md) when suggesting vLLM, NCU, NVIDIA, FlagOS, or evaluation skill routes; never turn a route into evidence without local artifacts.
+- **Patch claims need a source revision.** Do not claim patch applicability unless the affected commit/release and code diff are identified.
+- **No reproduction by accident.** Wiki construction does not run Docker, NPU, profiler, benchmark, or fuzzer jobs unless the user explicitly asks.
+
 ## Core Workflow
 
 1. Locate the workspace root and target wiki. If the user gives no path, use `llm_state_based/vllm_ascend/bug_wiki/`.
@@ -89,3 +96,4 @@ python3 llm_state_based/vllm_ascend/codex_skills/our-wiki-skill/vllm-bug-wiki/sc
 - [references/schema.md](references/schema.md): capsule contract, confidence levels, and quality gates.
 - [references/examples.md](references/examples.md): worked task patterns.
 - [references/vllm_skills.md](references/vllm_skills.md): how official vLLM deploy/benchmark skills connect to bug verification.
+- [../shared/upstream-routes.md](../shared/upstream-routes.md): cross-reference map to vLLM, NCU, NVIDIA, FlagOS, AI Research, and evaluation skills.

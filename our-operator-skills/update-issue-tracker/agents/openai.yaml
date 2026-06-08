@@ -1,0 +1,4 @@
+interface:
+  display_name: "Update Issue Tracker"
+  short_description: "Update issue tracker state and generate HTML reports."
+  default_prompt: "Use $update-issue-tracker to update the issue tracker JSON state and generate the matching HTML report for this reproduction result."

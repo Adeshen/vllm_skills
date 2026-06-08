@@ -4,6 +4,8 @@ This file connects the local feature-wiki skill to the official `vllm-project/vl
 
 Source: https://github.com/vllm-project/vllm-skills
 
+For broader upstream routes including NCU, NVIDIA, FlagOS, AI Research, and evaluation skills, also read `../shared/upstream-routes.md` from the `our-wiki-skill/` directory.
+
 ## What To Import Conceptually
 
 Use official vLLM skills as companion execution workflows:

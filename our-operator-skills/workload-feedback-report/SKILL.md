@@ -15,6 +15,13 @@ The core split is:
 
 Do not try to infer the full story from one source type alone.
 
+## Golden Rules
+
+- Organize by workload family, not chronology or issue number.
+- Treat upstream skills as generator/evaluation route references only.
+- Read [../shared/upstream-routes.md](../shared/upstream-routes.md) when proposing next actions that involve vLLM benchmarks, NCU/profiling, NVIDIA distributed/MoE workflows, FlagOS kernel routes, or evaluation gates.
+- Every generator action must be one of `expand`, `zoom`, `freeze`, or `prune`.
+
 ## Standard Inputs
 
 Use an explicit input bundle. Prefer a JSON file such as `report_inputs.json` over free-form path discovery.
@@ -111,4 +118,3 @@ The final response should include:
 - report path
 - the top workload family
 - the most important next generator action
-

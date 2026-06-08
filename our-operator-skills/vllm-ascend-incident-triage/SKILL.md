@@ -11,6 +11,13 @@ Treat incident work as a fixed pipeline:
 
 Do not start with profiler, restart, or parameter changes unless the baseline bundle has already been captured.
 
+## Golden Rules
+
+- Baseline before disruption. The first useful artifact is the read-only scene bundle.
+- Save the trigger request or request mix before attempting to simplify it.
+- Read [../shared/upstream-routes.md](../shared/upstream-routes.md) when routing to benchmark, trace, reproduction, profiler, distributed, MoE, or evaluation follow-up.
+- Separate original scene, replay scene, and specialist follow-up; do not merge them into one conclusion.
+
 ## Standard Inputs
 
 Capture these inputs explicitly before acting:

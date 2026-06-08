@@ -24,6 +24,13 @@ Borrow the knowledge-base discipline from KernelWiki and the lightweight `SKILL.
 - Preserve `unknown` instead of inventing version, CANN, command, model, or compatibility facts.
 - New local model-path examples must use `/mnt/data2/model_weights`; do not write the legacy model-volume path.
 
+## Golden Rules
+
+- **State first, prose second.** Every feature page should explain what state is created, mutated, cached, reused, freed, and can become inconsistent.
+- **Route upstream skills explicitly.** Read [../shared/upstream-routes.md](../shared/upstream-routes.md) when connecting a feature to benchmark, profiling, evaluation, kernel, or distributed-training workflows.
+- **Separate theory from evidence.** Upstream skills can improve the story and verification route; local evidence decides Ascend-specific facts.
+- **Do not execute from a documentation request.** If the user asks for theory/wiki work, name the verification skill route but do not run benchmarks, Docker, NPU jobs, or profilers.
+
 ## Core Workflow
 
 1. Locate the workspace root and target wiki. If the user gives no path, use the current workspace and `llm_state_based/vllm_ascend/vllm_engine_feature_wiki/`.
@@ -75,3 +82,4 @@ python3 llm_state_based/vllm_ascend/codex_skills/our-wiki-skill/vllm-feature-wik
 - [references/schema.md](references/schema.md): feature page contract, confidence levels, and quality gates.
 - [references/examples.md](references/examples.md): worked task patterns.
 - [references/vllm_skills.md](references/vllm_skills.md): how official vLLM deploy/benchmark skills connect to this wiki.
+- [../shared/upstream-routes.md](../shared/upstream-routes.md): cross-reference map to vLLM, NCU, NVIDIA, FlagOS, AI Research, and evaluation skills.

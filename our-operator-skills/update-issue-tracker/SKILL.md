@@ -7,6 +7,13 @@ description: Update the issue tracker JSON state and generate HTML report for a 
 
 When completing issue reproduction work, update the tracker state and generate reports directly.
 
+## Golden Rules
+
+- Tracker state must reflect the report, not aspiration.
+- Do not overwrite issue history without preserving completed step artifacts.
+- Read [../shared/upstream-routes.md](../shared/upstream-routes.md) when recording that an upstream skill route was used for planning or verification.
+- Generated HTML must link back to the Markdown report and local artifacts.
+
 ## When to Use
 
 - After completing a reproduction step (1-7)
@@ -156,3 +163,7 @@ Before finishing:
 - [ ] Status and progress are accurate
 - [ ] Artifact paths are correct
 - [ ] Date format is ISO 8601 for JSON, YYYY-MM-DD for HTML display
+
+## Evidence And Validation
+
+The tracker update is valid only when the JSON state points to an existing Markdown report or explicit artifact path, the HTML report was generated from the same report content, and the summary counters match the issue records. Do not mark a step `completed` unless its artifact exists or the reason for completion is written in the step notes.

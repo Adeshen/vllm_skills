@@ -7,6 +7,13 @@ description: Run benchmark and pressure-testing workflows for remote vLLM Ascend
 
 Benchmark remote vLLM services through the existing `vllm_observe` toolchain. Sync assets first, run the benchmark with explicit parameters, and classify failures by startup, runtime, or workload behavior.
 
+## Golden Rules
+
+- Verify service health before load; do not benchmark a dead endpoint.
+- Use local EvalScope/KV recorder artifacts as evidence; upstream benchmark skills are planning references only.
+- Read [../shared/upstream-routes.md](../shared/upstream-routes.md) when choosing between `vllm-bench-serve`, random synthetic, prefix-cache, evaluation, or profiler routes.
+- Keep workload axes explicit: prompt source, concurrency, request count, token lengths, sampling params, model, port, and output directory.
+
 ## Workflow
 
 1. Verify the target service.
@@ -66,3 +73,7 @@ Summaries should include:
 - peak and final KV cache usage
 - exact artifact paths
 - whether the run hit a model bug, system bug, or benchmark setup issue
+
+## Validation
+
+A benchmark run is valid only when the final summary names the service endpoint, workload parameters, result artifact paths, success/failure counts, and whether failures came from service startup, runtime engine behavior, workload pressure, or benchmark plumbing.

@@ -7,6 +7,13 @@ description: Read and reproduce vllm-ascend GitHub issues on npu4. Use when Code
 
 Treat issue reproduction as a structured workflow: fetch the issue, extract its repro axes, map them to the current `npu4` environment, run the closest safe reproduction, and write a local report with a precise conclusion.
 
+## Golden Rules
+
+- Extract the issue first; do not start by guessing a command.
+- Preserve direct vs approximate reproduction as a first-class distinction.
+- Read [../shared/upstream-routes.md](../shared/upstream-routes.md) when selecting companion routes for vLLM serving, benchmark, NCU, FlagOS, NVIDIA distributed/MoE, or evaluation work.
+- If a local blocker fires before the target bug, classify the run as blocked or approximate, not reproduced.
+
 ## Workflow
 
 1. Fetch and summarize the issue first.
@@ -97,6 +104,10 @@ The final report should include:
 - artifact paths
 - observed signature
 - final conclusion label
+
+## Evidence Contract
+
+Every reproduction claim needs the issue source, extracted trigger axes, local environment, exact command or request, observed result, and artifact path. If any of these are missing, use `blocked` or `approximately_reproduced` rather than a stronger label.
 
 Short session summaries should include:
 

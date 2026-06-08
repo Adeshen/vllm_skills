@@ -86,6 +86,16 @@ The installer does not modify submodules. It writes:
 - `manifest.md`
 - one normalized entry per discovered skill, named as `<source>__<skill-name>`
 
+## Local Skill Audit
+
+Run the local audit after changing `our-wiki-skill/` or `our-operator-skills/`:
+
+```bash
+python3 scripts/audit_local_skills.py
+```
+
+The audit checks that each local skill has frontmatter, a `Use when` trigger, references, UI metadata, evidence rules, validation/output guidance, and upstream-route awareness.
+
 ## Clone With Submodules
 
 After cloning this repository:

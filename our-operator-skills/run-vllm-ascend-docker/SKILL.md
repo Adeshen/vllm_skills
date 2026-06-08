@@ -7,6 +7,13 @@ description: Run, restart, and troubleshoot vLLM Ascend Docker services on npu4 
 
 Operate `vllm-ascend` on `npu4` conservatively. Confirm storage, Docker, and NPU visibility before changing serve arguments, and treat model settings as parameters rather than assuming a fixed template.
 
+## Golden Rules
+
+- Inspect before restart; preserve the current launch shape and logs when debugging.
+- Change one risk dimension at a time: image, model, parallelism, quantization, context, scheduler flags, and cache flags should not all move together.
+- Read [../shared/upstream-routes.md](../shared/upstream-routes.md) when borrowing generic vLLM deploy guidance; Ascend-specific flags and mounts still require local evidence.
+- New model paths must use `/mnt/data2/model_weights`.
+
 ## Workflow
 
 1. Confirm the environment first.
@@ -80,3 +87,7 @@ Use this sequence:
 - `ssh npu4 'curl -sS http://127.0.0.1:<port>/v1/chat/completions -H "Content-Type: application/json" -d "{\"model\":\"<served>\",\"messages\":[{\"role\":\"user\",\"content\":\"Reply with exactly: hello\"}],\"max_tokens\":8,\"temperature\":0}"'`
 
 If the model list is healthy but generation fails, keep the container and mount assumptions fixed and isolate the model arguments next.
+
+## Validation
+
+A service change is valid only when the final response reports the image/container, model path, served model name, port, parallelism/quantization/context settings, `/v1/models` result, and minimal generation result or the exact failure signature.

@@ -7,6 +7,13 @@ description: Collect end-to-end traces for vLLM Ascend services on npu4 using lo
 
 Collect traces end to end: local Jaeger, SSH tunnels, trace-enabled vLLM, and request verification. Do not treat the collector, transport, and service-export paths as the same failure domain.
 
+## Golden Rules
+
+- Confirm collector, tunnel, service flags, and traced request separately.
+- Do not restart or relaunch a service just because traces are missing; classify the missing-trace domain first.
+- Read [../shared/upstream-routes.md](../shared/upstream-routes.md) when borrowing observability vocabulary from Phoenix, LangSmith, NVIDIA, or evaluation skills.
+- Evidence is queryable spans plus the command/request/log path that produced them.
+
 ## Workflow
 
 1. Start or verify local Jaeger.
@@ -58,3 +65,7 @@ Summaries should include:
 - the vLLM trace flags observed
 - the request used to generate a trace
 - the Jaeger service name and whether traces were queryable
+
+## Validation
+
+Trace collection is successful only when Jaeger returns a service name and at least one queryable trace for the tested request. If traces are missing, the final response must classify the failure domain as collector, tunnel, service export, visibility mismatch, or request issue.

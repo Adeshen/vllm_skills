@@ -7,6 +7,13 @@ description: Normalize vLLM Ascend experiment, benchmark, trace, and GitHub issu
 
 Turn raw execution notes into a report that is easy to compare across runs. Keep the structure fixed, preserve the difference between original issue conditions and local observations, and avoid ad hoc section drift.
 
+## Golden Rules
+
+- Reports normalize evidence; they do not upgrade weak evidence into stronger conclusions.
+- Keep original issue conditions, local approximation, commands, artifacts, and interpretation separate.
+- Read [../shared/upstream-routes.md](../shared/upstream-routes.md) when a report mentions upstream vLLM, NCU, NVIDIA, FlagOS, or evaluation skill routes.
+- Every conclusion label must be justified by a concrete signature or blocker.
+
 ## Workflow
 
 1. Identify the report type first.
@@ -118,4 +125,3 @@ The final response should include:
 - the HTML report path
 - the normalized conclusion label
 - the primary observed signature
-
