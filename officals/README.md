@@ -105,3 +105,15 @@ git submodule update --init --recursive
 ```
 
 To refresh upstream submodules intentionally, update each submodule and commit the changed submodule pointer.
+
+## Normalized Install
+
+Many upstream repositories keep skills below different paths, such as `skills/*/SKILL.md`, `plugins/*/skills/*/SKILL.md`, `.agents/skills/*/SKILL.md`, or a repository-root `SKILL.md`.
+
+From the repository root, run:
+
+```bash
+make install
+```
+
+This calls [../scripts/install_upstream_skills.py](../scripts/install_upstream_skills.py), creates symlinks under `build/upstream_skills/`, and writes `manifest.json` plus `manifest.md`. The generated install tree is ignored by git.

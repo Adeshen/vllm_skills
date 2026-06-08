@@ -24,3 +24,13 @@ This directory contains Git submodules for high-performance computing, GPU/kerne
 ## Evidence Rule
 
 These repositories are upstream references. Do not cite them as proof of a local vLLM, vLLM-Ascend, CUDA, or NPU bug unless a local report records the exact command, environment, hardware, profiler artifact, logs, metrics, and source revision.
+
+## Install Note
+
+The submodules in this directory do not share a single skill-folder layout. Use the repository-level installer:
+
+```bash
+make install
+```
+
+It scans known layouts and exposes normalized entries under `build/upstream_skills/`.

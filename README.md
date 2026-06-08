@@ -53,6 +53,39 @@ The local wiki skills also reference [KernelWiki](https://github.com/mit-han-lab
 
 Note: the KernelWiki snapshot under [officals/kernelwiki/KernelWiki/](officals/kernelwiki/KernelWiki/) is kept verbatim at the requested commit. Its upstream `SKILL.md` has a frontmatter field that is outside the current local validator schema.
 
+## Normalized Skill Install
+
+The upstream repositories do not all expose skills from the same folder depth. Use the local installer to discover every `SKILL.md` from known submodule layouts and create a normalized install tree:
+
+```bash
+make install
+```
+
+By default this writes symlinks and manifests under `build/upstream_skills/`, which is ignored by git. To create only the manifest:
+
+```bash
+make manifest
+```
+
+To inspect discovered skills:
+
+```bash
+make list
+```
+
+To install into another skill directory, pass `TARGET` and optionally `MODE=copy`:
+
+```bash
+make install TARGET="$CODEX_HOME/skills" MODE=symlink
+make install TARGET="/tmp/vllm-skills-install" MODE=copy
+```
+
+The installer does not modify submodules. It writes:
+
+- `manifest.json`
+- `manifest.md`
+- one normalized entry per discovered skill, named as `<source>__<skill-name>`
+
 ## Clone With Submodules
 
 After cloning this repository:
